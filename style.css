@@ -12,7 +12,16 @@ body {
   width: 100%;
 }
 
+#main {  
+  position: relative;
+ 
+}
+
 #landing {
+  position: absolute;
+  opacity: 1;
+  scale: 1;
+  z-index: 10;
   height: 100vh;
   width: 100vw;
   background-color: #000;
@@ -25,7 +34,6 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-flow: nowrap;
-  /* background-color: rgb(139, 167, 237); */
   padding: 0 2.6em;
 }
 
@@ -65,7 +73,7 @@ body {
   display: none;
 }
 
-#right #nav-items img {
+#right #nav-items > .social {
   display: none;
 }
 
@@ -86,6 +94,12 @@ body {
     rgba(88, 109, 218, 1) 54%,
     rgba(101, 76, 224, 1) 100%
   );
+}
+
+#nav-items > .menu {
+  margin-top: 10px;
+  color: white;
+  display: none;
 }
 
 /* center */
@@ -115,7 +129,7 @@ body {
 #content {
   position: absolute;
   margin-top: 2em;
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,10 +140,10 @@ body {
   color: #cbcbc8;
   mix-blend-mode: difference;
   font-weight: 600;
-  line-height: 1.2em;
+  line-height: 1em;
   text-align: center;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 80px;
 }
 
 #content > .heading span {
@@ -191,4 +205,43 @@ body {
     rgba(88, 109, 218, 1) 54%,
     rgba(101, 76, 224, 1) 100%
   );
+}
+
+/* ---------coming soon----------- */
+
+#coming-soon {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9;
+  opacity: 0;
+  /* scale: 0; */
+  top: 0;
+  left: 0;
+}
+
+.box {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box > video {
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+  position: relative;
+}
+
+.box > h1 {
+  position: absolute;
+  font-size: 80px;
+  mix-blend-mode: difference;
 }

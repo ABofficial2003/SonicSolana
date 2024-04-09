@@ -1,0 +1,64 @@
+@media screen and (max-width: 600px) {
+    
+    #navbar{
+        height: 10vh;
+        padding: 0 1.3em;
+    }
+
+    .launch-btn{
+        display: none;
+    }
+
+    #nav-items > .menu{
+        display: block;
+    }
+
+    .video-bg{
+        height: 100%;
+        width: 100%;
+        object-fit:none;
+        object-position: 14% 5%;
+    }
+
+    #container{
+        height: 90vh;
+    }
+
+    #content{
+        width: 90%;
+    }
+
+    #content > .heading{
+        font-size: 40px;
+
+    }
+
+    #content > .description{
+        text-align: center;
+    }
+
+    .launch-btn-main{
+        font-size: 14px;
+        padding: 11px 25px;
+    }
+
+    .join-btn-main{
+        font-size: 14px;
+        padding: 11px 25px;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .box > video {
+        height: 100%;
+        width: 900px;
+        object-fit:contain;
+    }
+
+    .box > h1{
+        font-size: 40px;
+    }
+
+}
