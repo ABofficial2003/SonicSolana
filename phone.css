@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   #navbar {
     height: 10vh;
     padding: 0 1.3em;
@@ -13,13 +13,14 @@
   }
   .phone-bg {
     width: 100%;
-    object-fit: cover;
+    /* height: 0%; */
+    object-fit: contain;
     display: block;
-    object-position: 80% 50%;
+    object-position: top 10%;
   }
 
   #nav-items .socials .social {
-    height: 30px;
+    height: 25px;
   }
 
   #container {
