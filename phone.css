@@ -8,6 +8,10 @@
     display: none;
   }
 
+  #right #nav-items .socials > img {
+    height: 1.6rem;
+  }
+
   .video-bg {
     display: none;
   }
