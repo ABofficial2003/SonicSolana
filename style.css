@@ -128,11 +128,10 @@ body {
   overflow: clip;
 }
 
-.phone-bg{
+.phone-bg {
   position: absolute;
   display: none;
 }
-
 
 #content {
   position: absolute;
