@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   #navbar {
     height: 10vh;
     padding: 0 1.3em;
@@ -12,12 +12,11 @@
     display: none;
   }
   .phone-bg {
-    width: 100%;
     position: absolute;
     top: 30%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     display: block;
-    object-position: top 10%;
   }
 
   #nav-items .socials .social {
@@ -44,12 +43,12 @@
   }
 
   .launch-btn-main {
-    font-size: 15px;
+    font-size: 14px;
     padding: 11px 25px;
   }
 
   .join-btn-main {
-    font-size: 15px;
+    font-size: 14px;
     padding: 11px 25px;
   }
 

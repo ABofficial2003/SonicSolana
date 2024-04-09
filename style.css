@@ -28,7 +28,7 @@ body {
 #navbar {
   border: none;
   outline: none;
-  height: 14vh;
+  height: 12vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -102,11 +102,11 @@ body {
   text-decoration: none;
 }
 
-/*-------------------- main page------------------------ */
+/*-------------- main page------------- */
 
 #container {
   position: relative;
-  height: 85vh;
+  height: 88vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -115,7 +115,6 @@ body {
 }
 
 .video-bg {
-  /* position: relative; */
   inset: 0 auto;
   width: 100%;
 }
@@ -129,15 +128,13 @@ body {
 }
 
 .phone-bg {
-  position: absolute;
   display: none;
 }
 
 #content {
   position: absolute;
-  margin-top: 2em;
   width: 40%;
-  /* background-color: red; */
+  /* background-color: red;  */
   display: flex;
   flex-direction: column;
   align-items: center;
