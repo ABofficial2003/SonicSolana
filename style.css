@@ -133,7 +133,7 @@ body {
 
 #content {
   position: absolute;
-  width: 40%;
+  width: 37%;
   /* background-color: red;  */
   display: flex;
   flex-direction: column;
@@ -238,4 +238,20 @@ body {
   position: absolute;
   font-size: 80px;
   mix-blend-mode: difference;
+}
+
+#coming-soon .social-btns{
+  position: absolute;
+  display: flex;
+  gap: 2em;
+  bottom: 5%;
+  background-color: rgba(234, 233, 233, 0.402)(231, 231, 231);
+  padding: 1em 2.5em;
+  border-radius: 20px;
+  border: 1px solid white;
+  mix-blend-mode: difference;
+}
+
+#coming-soon .social-btns a{
+  text-decoration: none;
 }
