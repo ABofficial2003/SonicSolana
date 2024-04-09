@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +17,7 @@
   </head>
   <body>
     <div id="main">
-      <div id="landing">
+      <section id="landing">
         <div id="navbar">
           <div id="left">
             <div id="logo">
@@ -38,27 +35,36 @@
               <div class="select">
                 <div class="select-dropbox">English 🔻</div>
               </div>
-              <img
-                class="social"
-                src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20xmlns='http://www.w3.org/2000/svg'%20fill-rule='evenodd'%20clip-rule='evenodd'%20stroke-linejoin='round'%20stroke-miterlimit='1.414'%3e%3cpath%20d='M18.384%2022.779a1.19%201.19%200%20001.107.145%201.16%201.16%200%2000.724-.84C21.084%2018%2023.192%207.663%2023.983%203.948a.78.78%200%2000-.26-.758.8.8%200%2000-.797-.14C18.733%204.602%205.82%209.447.542%2011.4a.827.827%200%2000-.542.799c.012.354.25.661.593.764%202.367.708%205.474%201.693%205.474%201.693s1.452%204.385%202.209%206.615c.095.28.314.5.603.576a.866.866%200%2000.811-.207l3.096-2.923s3.572%202.619%205.598%204.062zm-11.01-8.677l1.679%205.538.373-3.507%2010.185-9.186a.277.277%200%2000.033-.377.284.284%200%2000-.376-.064L7.374%2014.102z'%20fill='%23E8EEFF'/%3e%3c/svg%3e"
-                alt="telegram"
-              />
-              <img
-                class="social"
-                height="25px"
-                src="data:image/svg+xml,%3csvg%20width='21'%20height='21'%20viewBox='0%200%2021%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.2806%202.625H18.0373L12.0148%209.50833L19.0998%2018.875H13.5523L9.20728%2013.1942L4.23565%2018.875H1.47731L7.91898%2011.5125L1.12231%202.625H6.81065L10.7381%207.8175L15.2806%202.625ZM14.3131%2017.225H15.8406L5.98065%204.18833H4.34148L14.3131%2017.225Z'%20fill='%23E8EEFF'/%3e%3c/svg%3e"
-                alt="X"
-              />
-              <button onclick="changeBg()" class="launch-btn">
-                Launch Beta
-              </button>
+              <a class="socials" href="#coming-soon">
+                <img
+                  class="social"
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20xmlns='http://www.w3.org/2000/svg'%20fill-rule='evenodd'%20clip-rule='evenodd'%20stroke-linejoin='round'%20stroke-miterlimit='1.414'%3e%3cpath%20d='M18.384%2022.779a1.19%201.19%200%20001.107.145%201.16%201.16%200%2000.724-.84C21.084%2018%2023.192%207.663%2023.983%203.948a.78.78%200%2000-.26-.758.8.8%200%2000-.797-.14C18.733%204.602%205.82%209.447.542%2011.4a.827.827%200%2000-.542.799c.012.354.25.661.593.764%202.367.708%205.474%201.693%205.474%201.693s1.452%204.385%202.209%206.615c.095.28.314.5.603.576a.866.866%200%2000.811-.207l3.096-2.923s3.572%202.619%205.598%204.062zm-11.01-8.677l1.679%205.538.373-3.507%2010.185-9.186a.277.277%200%2000.033-.377.284.284%200%2000-.376-.064L7.374%2014.102z'%20fill='%23E8EEFF'/%3e%3c/svg%3e"
+                  alt="telegram"
+                />
+              </a>
+
+              <a class="socials" href="#coming-soon">
+                <img
+                  class="social"
+                  height="25px"
+                  src="data:image/svg+xml,%3csvg%20width='21'%20height='21'%20viewBox='0%200%2021%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.2806%202.625H18.0373L12.0148%209.50833L19.0998%2018.875H13.5523L9.20728%2013.1942L4.23565%2018.875H1.47731L7.91898%2011.5125L1.12231%202.625H6.81065L10.7381%207.8175L15.2806%202.625ZM14.3131%2017.225H15.8406L5.98065%204.18833H4.34148L14.3131%2017.225Z'%20fill='%23E8EEFF'/%3e%3c/svg%3e"
+                  alt="X"
+                />
+              </a>
+
+              <a class="btns" href="#coming-soon">
+                <button class="launch-btn">Launch Beta</button>
+              </a>
               <img class="menu" src="./assets/menu.png" alt="menu" />
             </div>
           </div>
         </div>
         <div id="container">
           <video class="video-bg" loop muted autoplay>
-            <source src="./assets/backgroundSonic.mp4" type="video/mp4" />
+            <source src="./assets/FinalBG.mp4" type="video/mp4" />
+          </video>
+          <video class="phone-bg" loop muted autoplay>
+            <source src="./assets/phoneBG.mp4" type="video/mp4" />
           </video>
           <div id="content">
             <h1 class="heading">
@@ -67,23 +73,26 @@
             <div class="description">
               The new home of Solana traders powered by AI
             </div>
+            <h1 class="coming-soon-main">Launching Soon...</h1>
             <div class="buttons">
-              <button onclick="changeBg()" class="launch-btn-main">
-                Launch Beta
-              </button>
+              <a class="btns" href="#coming-soon">
+                <button onclick="changeBg()" class="launch-btn-main">
+                  Launch Beta
+                </button>
+              </a>
 
-              <button class="join-btn-main btn">Join Community</button>
+              <a class="btns" href="#coming-soon">
+                <button class="join-btn-main btn">Join Community</button>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="coming-soon">
-        <div class="box">
-          <video muted loop autoplay class="gif" src="./assets/gif.mp4"></video>
-          <h1>COMING SOON!</h1>
-        </div>
-      </div>
+      <section id="coming-soon">
+        <video muted loop autoplay class="gif" src="./assets/gif.mp4"></video>
+        <h1>COMING SOON!</h1>
+      </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

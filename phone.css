@@ -1,65 +1,67 @@
-@media screen and (max-width: 600px) {
-    
-    #navbar{
-        height: 10vh;
-        padding: 0 1.3em;
-    }
+@media screen and (max-width: 1024px) {
+  #navbar {
+    height: 10vh;
+    padding: 0 1.3em;
+  }
 
-    .launch-btn{
-        display: none;
-    }
+  .launch-btn {
+    display: none;
+  }
 
-    #nav-items > .menu{
-        display: block;
-    }
+  .video-bg {
+    display: none;
+  }
+  .phone-bg {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 80% 50%;
+  }
 
-    .video-bg{
-        height: 100%;
-        width: 100%;
-        object-fit:none;
-        object-position: 14% 5%;
-    }
+  #nav-items .socials .social {
+    height: 30px;
+  }
 
-    #container{
-        height: 90vh;
-    }
+  #container {
+    height: 90vh;
+  }
 
-    #content{
-        width: 90%;
-    }
+  #content {
+    width: 90%;
+    gap: 2em;
+  }
 
-    #content > .heading{
-        font-size: 40px;
+  #content > .heading {
+    font-size: 50px;
+    line-height: 1.2em;
+  }
 
-    }
+  #content > .description {
+    font-size: 20px;
+    text-align: center;
+  }
 
-    #content > .description{
-        text-align: center;
-    }
+  .launch-btn-main {
+    font-size: 16px;
+    padding: 11px 25px;
+  }
 
-    .launch-btn-main{
-        font-size: 14px;
-        padding: 11px 25px;
-    }
+  .join-btn-main {
+    font-size: 16px;
+    padding: 11px 25px;
+  }
 
-    .join-btn-main{
-        font-size: 14px;
-        padding: 11px 25px;
-    }
+  #coming-soon {
+    overflow: hidden;
+  }
 
-    .box{
-        width: 100%;
-        overflow: hidden;
-    }
+  #coming-soon > video {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+  }
 
-    .box > video {
-        height: 100%;
-        width: 100%;
-        object-fit:cover;
-    }
-
-    .box > h1{
-        font-size: 40px;
-    }
-
+  #coming-soon > h1 {
+    font-size: 40px;
+  }
 }

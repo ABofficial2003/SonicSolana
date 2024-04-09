@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #fff;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -12,22 +13,21 @@ body {
   width: 100%;
 }
 
-#main {  
+#main {
   position: relative;
- 
+  overflow: hidden;
 }
 
 #landing {
-  position: absolute;
-  opacity: 1;
-  scale: 1;
-  z-index: 10;
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-color: #000;
 }
 
 #navbar {
+  border: none;
+  outline: none;
   height: 14vh;
   width: 100%;
   display: flex;
@@ -73,10 +73,6 @@ body {
   display: none;
 }
 
-#right #nav-items > .social {
-  display: none;
-}
-
 .launch-btn {
   font-size: 16px;
   border: none;
@@ -102,9 +98,14 @@ body {
   display: none;
 }
 
-/* center */
+#nav-items a {
+  text-decoration: none;
+}
+
+/*-------------------- main page------------------------ */
 
 #container {
+  position: relative;
   height: 85vh;
   width: 100%;
   display: flex;
@@ -114,26 +115,34 @@ body {
 }
 
 .video-bg {
-  position: relative;
+  /* position: relative; */
   inset: 0 auto;
   width: 100%;
 }
 
 .video-bg > video {
+  pointer-events: none;
   border: none;
   outline: none;
   overflow-clip-margin: content-box;
   overflow: clip;
 }
 
+.phone-bg{
+  position: absolute;
+  display: none;
+}
+
+
 #content {
   position: absolute;
   margin-top: 2em;
   width: 40%;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8em;
+  gap: 1.5em;
 }
 
 #content > .heading {
@@ -155,6 +164,12 @@ body {
   font-size: 17.5px;
   font-weight: 100;
   margin-bottom: 10px;
+}
+
+#content .coming-soon-main {
+  font-size: 30px;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
 }
 
 .buttons {
@@ -216,31 +231,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 9;
-  opacity: 0;
-  /* scale: 0; */
-  top: 0;
-  left: 0;
 }
 
-.box {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.box > video {
-  height: 80%;
-  width: 80%;
+#coming-soon video {
   object-fit: cover;
-  position: relative;
+  position: absolute;
 }
 
-.box > h1 {
+#coming-soon h1 {
   position: absolute;
   font-size: 80px;
   mix-blend-mode: difference;
