@@ -11,6 +11,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #000;
 }
 
 #main {
@@ -240,7 +241,7 @@ body {
 
 #coming-soon h1 {
   position: absolute;
-  font-size: 80px;
+  font-size: 5rem;
   mix-blend-mode: difference;
 }
 
@@ -248,11 +249,11 @@ body {
   position: absolute;
   display: flex;
   gap: 2em;
-  bottom: 5%;
+  bottom: 8%;
   background-color: rgba(234, 233, 233, 0.402) (231, 231, 231);
-  padding: 1em 2.5em;
+  padding: 0.6em 1.7em;
   border-radius: 20px;
-  border: 1px solid white;
+  border: 1.4px solid rgba(239, 239, 239, 0.473);
   mix-blend-mode: difference;
 }
 
