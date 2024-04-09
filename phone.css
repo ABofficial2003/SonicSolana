@@ -29,17 +29,21 @@
 
   #content {
     width: 90%;
-    gap: 2em;
+    gap: 1.5em;
   }
 
   #content > .heading {
-    font-size: 50px;
+    font-size: 2.8rem;
     line-height: 1.2em;
   }
 
   #content > .description {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
+  }
+
+  #content .coming-soon-main{
+    font-size: 1.6rem;
   }
 
   .launch-btn-main {
