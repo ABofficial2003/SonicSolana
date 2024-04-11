@@ -287,10 +287,9 @@ body {
     display: none;
   }
   .phone-bg {
-    position: absolute;
-    top: 0;
     width: 100%;
-    /* object-fit: none; */
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
 
