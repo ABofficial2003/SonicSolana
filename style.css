@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8em;
-  display: none;
+  /* display: none; */
 }
 
 #right #nav-items #nav-elems a {
@@ -77,7 +77,7 @@ body {
   padding: 8px 16px;
   border-radius: 10px;
   background-color: #ffffff25;
-  display: none;
+  /* display: none; */
 }
 
 .launch-btn {
@@ -348,4 +348,13 @@ body {
   #coming-soon .social-btns a > img {
     height: 1.6rem;
   }
+
+  .select .select-dropbox{
+    display: none;
+  }
+
+  #right #nav-items #nav-elems{
+    display: none;
+  }
+
 }
